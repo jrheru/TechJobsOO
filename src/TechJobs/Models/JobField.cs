@@ -5,7 +5,7 @@
         public int ID { get; set; }
         private static int nextId = 1;
 
-        public string Value { get; set; }
+        public string Value { get; set; } = "";
 
         public JobField()
         {

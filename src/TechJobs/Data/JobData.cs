@@ -59,6 +59,7 @@ namespace TechJobs.Data
          */
         public List<Job> FindByColumnAndValue(JobFieldType column, string value)
         {
+            
             var results = from j in Jobs
                           where GetFieldByType(j, column).Contains(value)
                           select j;
